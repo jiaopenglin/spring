@@ -10,29 +10,29 @@
    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 
-    <bean id="user" class="com.spring.ioc.model.User">
+    <bean id="user" class="note.spring.model.User">
             <property name="name" value="jack"></property>
              <property name="age" value="15"></property>
     </bean>
 
 
-    <bean id="beanPostProcessor" class="com.spring.ioc.utils.MyBeanPostProcessor">
+    <bean id="beanPostProcessor" class="note.spring.utils.MyBeanPostProcessor">
     </bean>
 
-    <bean id="instantiationAwareBeanPostProcessor" class="com.spring.ioc.utils.MyInstantiationAwareBeanPostProcessor">
+    <bean id="instantiationAwareBeanPostProcessor" class="note.spring.utils.MyInstantiationAwareBeanPostProcessor">
     </bean>
 
-    <bean id="beanFactoryPostProcessor" class="com.spring.ioc.utils.MyBeanFactoryPostProcessor">
+    <bean id="beanFactoryPostProcessor" class="note.spring.utils.MyBeanFactoryPostProcessor">
     </bean>
 
-    <bean id="person" class="com.spring.ioc.model.Person" init-method="myInit"
+    <bean id="person" class="note.spring.model.Person" init-method="myInit"
           destroy-method="myDestory" scope="singleton" p:name="张三" p:address="广州"
           p:phone="15900000000" ></bean>
 
-    <bean id="myaop" class="com.spring.ioc.aop.MYAop"></bean>
+    <bean id="myaop" class="note.spring.aop.MYAop"></bean>
 
 
-    <bean id="userService" class="com.spring.ioc.service.impl.UserServiceImpl"></bean>
+    <bean id="userService" class="note.spring.service.impl.UserServiceImpl"></bean>
 
 
 

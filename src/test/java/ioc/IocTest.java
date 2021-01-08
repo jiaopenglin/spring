@@ -1,7 +1,7 @@
 package ioc;
 
-import com.spring.ioc.model.User;
-import com.spring.ioc.service.UserService;
+import note.spring.model.User;
+import note.spring.service.UserService;
 import org.junit.Test;
 import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.context.ApplicationContext;

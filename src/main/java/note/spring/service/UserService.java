@@ -1,4 +1,4 @@
-package com.spring.ioc.service;
+package note.spring.service;
 
 import org.springframework.stereotype.Service;
 

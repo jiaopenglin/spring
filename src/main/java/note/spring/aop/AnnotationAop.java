@@ -1,4 +1,4 @@
-package com.spring.ioc.aop;
+package note.spring.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Aspect;

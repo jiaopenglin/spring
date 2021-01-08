@@ -1,7 +1,7 @@
-package com.spring.ioc.service.impl;
+package note.spring.service.impl;
 
-import com.spring.ioc.annotation.SystemLog;
-import com.spring.ioc.service.UserService;
+import note.spring.annotation.SystemLog;
+import note.spring.service.UserService;
 import org.springframework.stereotype.Service;
 
 @Service

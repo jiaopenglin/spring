@@ -1,4 +1,4 @@
-package com.spring.ioc.annotation;
+package note.spring.annotation;
 
 import java.lang.annotation.*;
 

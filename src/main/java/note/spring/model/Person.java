@@ -1,4 +1,4 @@
-package com.spring.ioc.model;
+package note.spring.model;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;

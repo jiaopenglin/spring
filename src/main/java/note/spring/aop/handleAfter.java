@@ -1,4 +1,4 @@
-package com.spring.ioc.aop;
+package note.spring.aop;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-public class HandleAop {
+public class handleAfter {
     /**
      * 切点表达式:
      *     ..两个点表明多个，*代表一个
@@ -41,7 +41,7 @@ public class HandleAop {
     @After(value="pointCut()")
     public void   after(){
 
-        System.out.println("aop方法执行完  after");
+        System.out.println("方法执行完  after");
     }
 
 

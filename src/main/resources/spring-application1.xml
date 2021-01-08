@@ -13,7 +13,7 @@
     <context:component-scan base-package="com" />
     <!-- 配置开启@Aspect支持 -->
     <aop:aspectj-autoproxy proxy-target-class="true" />
-    <bean id="myaop" class="com.spring.ioc.aop.MYAop"></bean>
+    <bean id="myaop" class="note.spring.aop.MYAop"></bean>
 
 
 
