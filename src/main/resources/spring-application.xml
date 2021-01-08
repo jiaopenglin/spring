@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+   http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/aop
+   http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+
+    <bean id="user" class="com.spring.ioc.model.User">
+            <property name="name" value="jack"></property>
+             <property name="age" value="15"></property>
+    </bean>
+
+
+    <bean id="beanPostProcessor" class="com.spring.ioc.utils.MyBeanPostProcessor">
+    </bean>
+
+    <bean id="instantiationAwareBeanPostProcessor" class="com.spring.ioc.utils.MyInstantiationAwareBeanPostProcessor">
+    </bean>
+
+    <bean id="beanFactoryPostProcessor" class="com.spring.ioc.utils.MyBeanFactoryPostProcessor">
+    </bean>
+
+    <bean id="person" class="com.spring.ioc.model.Person" init-method="myInit"
+          destroy-method="myDestory" scope="singleton" p:name="张三" p:address="广州"
+          p:phone="15900000000" ></bean>
+
+    <bean id="myaop" class="com.spring.ioc.aop.MYAop"></bean>
+
+
+    <bean id="userService" class="com.spring.ioc.service.impl.UserServiceImpl"></bean>
+
+
+
+    <aop:config>
+        <aop:pointcut id="pointcut"   expression="execution(* com.spring.*..*(..))" ></aop:pointcut>
+        <aop:advisor advice-ref="myaop" pointcut-ref="pointcut"/>
+
+    </aop:config>
+</beans>
