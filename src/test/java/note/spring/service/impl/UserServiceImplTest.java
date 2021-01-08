@@ -8,14 +8,14 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:spring-application1.xml"})
+@ContextConfiguration(locations = {"classpath:application-aop.xml"})
 public class UserServiceImplTest {
 
     @Autowired
-    public UserService UserService;
+    public UserService userService;
     @Test
     public void addUser() throws Exception {
-        UserService.update();
+        userService.update();
         Object f;
 
     }

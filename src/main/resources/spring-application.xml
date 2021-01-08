@@ -27,7 +27,7 @@
 
     <bean id="person" class="note.spring.model.Person" init-method="myInit"
           destroy-method="myDestory" scope="singleton" p:name="张三" p:address="广州"
-          p:phone="15900000000" ></bean>
+          p:phone="15900000" ></bean>
 
     <bean id="myaop" class="note.spring.aop.MYAop"></bean>
 
